@@ -2,6 +2,10 @@
 site_name: Tu Bo Shu
 nav:
   - 主页: README.md
+  - 破解:
+    - pojie/README.md
+    - 网址解禁: pojie/hosts/README.md
+    - 电子教室: pojie/jiyu/README.md
 use_directory_urls: false
 theme:
   name: material
