@@ -1,1 +1,1 @@
-{"config":{"lang":["en","ja","zh"],"separator":"[\\s\\-\\.]+","pipeline":["stemmer"]},"docs":[{"location":"index.html","title":"\u4e3b\u9875","text":""},{"location":"index.html#tu-ba-shu","title":"Tu Ba Shu","text":""}]}
+{"config":{"lang":["en","ja","zh"],"separator":"[\\s\\-\\.]+","pipeline":["stemmer"]},"docs":[{"location":"index.html","title":"\u4e3b\u9875","text":""},{"location":"index.html#tu-bo-shu","title":"Tu Bo Shu","text":""}]}
