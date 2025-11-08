@@ -4,4 +4,16 @@
          <loc>https://example.com/index.html</loc>
          <lastmod>2025-11-08</lastmod>
     </url>
+    <url>
+         <loc>https://example.com/pojie/index.html</loc>
+         <lastmod>2025-11-08</lastmod>
+    </url>
+    <url>
+         <loc>https://example.com/pojie/hosts/index.html</loc>
+         <lastmod>2025-11-08</lastmod>
+    </url>
+    <url>
+         <loc>https://example.com/pojie/jiyu/index.html</loc>
+         <lastmod>2025-11-08</lastmod>
+    </url>
 </urlset>
