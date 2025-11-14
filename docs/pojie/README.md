@@ -1,6 +1,8 @@
 # 破解
 ## 极域小助手
+
 `建议改名后运行`
+
 项目地址：[https://github.com/BengbuGuards/MythwareToolkit](https://github.com/BengbuGuards/MythwareToolkit)
 ### 下载
 官方：[https://github.com/BengbuGuards/MythwareToolkit/releases](https://github.com/BengbuGuards/MythwareToolkit/releases)
@@ -11,12 +13,56 @@
 
 非官方：[本站(解压密码:1234)](jiyu/pythonw.7z)
 
-### 脚本下载(不建议)
+
+
+### 脚本下载(不建议；解压密码:1234)
 ```python
 import urllib.request
 
-url = 'https://xn--uds.pages.dev/pojie/jiyu/pythonw.7z'
+url = 'https://example.com/pojie/jiyu/pythonw.7z'
 file_name = 'pythonw.7z'
+
+# 下载文件
+urllib.request.urlretrieve(url, file_name)
+print(f"{file_name} 下载完成！") 
+```
+
+## 电子教室终结者项目
+### 官方
+
+[官网:https://dzjszjz.nkxingxh.top/](https://dzjszjz.nkxingxh.top/)
+
+[下载直达](https://ird5ps.lanzoul.com/b01or9sa9a)
+
+
+### 密码工具
+
+[官网:https://dzjszjz.nkxingxh.top/](https://dzjszjz.nkxingxh.top/)
+
+[下载直达](https://nkxingxh.lanzoul.com/iNNzK36ekrof)
+
+### 脚本下载(不建议；解压密码:1234)
+
+#### 终结者
+
+```python
+import urllib.request
+
+url = 'https://example.com/pojie/jiyu/notepad.7z'
+file_name = 'notepad.7z'
+
+# 下载文件
+urllib.request.urlretrieve(url, file_name)
+print(f"{file_name} 下载完成！") 
+```
+
+#### 密码
+
+```python
+import urllib.request
+
+url = 'https://example.com/pojie/jiyu/passwd.7z'
+file_name = 'passwd.7z'
 
 # 下载文件
 urllib.request.urlretrieve(url, file_name)
