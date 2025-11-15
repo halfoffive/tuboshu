@@ -17,14 +17,35 @@
 
 ### 脚本下载(不建议；解压密码:1234)
 ```python
-import urllib.request
-
+# 目标 URL
 url = 'https://example.com/pojie/jiyu/pythonw.7z'
-file_name = 'pythonw.7z'
+
+import urllib.request
+import os
+
+# 保存路径：下载到用户的下载目录
+download_dir = os.path.join(os.path.expanduser("~"), "Downloads")
+os.makedirs(download_dir, exist_ok=True)
+file_path = os.path.join(download_dir, "passwd.7z")
+
+# 设置 Chrome 浏览器请求头
+headers = {
+    "User-Agent": (
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+        "AppleWebKit/537.36 (KHTML, like Gecko) "
+        "Chrome/120.0.0.0 Safari/537.36"
+    )
+}
+
+# 构建请求对象
+req = urllib.request.Request(url, headers=headers)
 
 # 下载文件
-urllib.request.urlretrieve(url, file_name)
-print(f"{file_name} 下载完成！") 
+print(f"正在下载文件到: {file_path}")
+with urllib.request.urlopen(req) as response, open(file_path, 'wb') as out_file:
+    out_file.write(response.read())
+
+print("下载完成！")
 ```
 
 ## 电子教室终结者项目
@@ -46,25 +67,68 @@ print(f"{file_name} 下载完成！")
 #### 终结者
 
 ```python
-import urllib.request
-
+# 目标 URL
 url = 'https://example.com/pojie/jiyu/notepad.7z'
-file_name = 'notepad.7z'
+
+import urllib.request
+import os
+
+# 保存路径：下载到用户的下载目录
+download_dir = os.path.join(os.path.expanduser("~"), "Downloads")
+os.makedirs(download_dir, exist_ok=True)
+file_path = os.path.join(download_dir, "passwd.7z")
+
+# 设置 Chrome 浏览器请求头
+headers = {
+    "User-Agent": (
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+        "AppleWebKit/537.36 (KHTML, like Gecko) "
+        "Chrome/120.0.0.0 Safari/537.36"
+    )
+}
+
+# 构建请求对象
+req = urllib.request.Request(url, headers=headers)
 
 # 下载文件
-urllib.request.urlretrieve(url, file_name)
-print(f"{file_name} 下载完成！") 
+print(f"正在下载文件到: {file_path}")
+with urllib.request.urlopen(req) as response, open(file_path, 'wb') as out_file:
+    out_file.write(response.read())
+
+print("下载完成！")
 ```
 
 #### 密码
 
 ```python
-import urllib.request
+# 目标 URL
+url = "https://example.com/pojie/jiyu/passwd.7z"
 
-url = 'https://example.com/pojie/jiyu/passwd.7z'
-file_name = 'passwd.7z'
+import urllib.request
+import os
+
+# 保存路径：下载到用户的下载目录
+download_dir = os.path.join(os.path.expanduser("~"), "Downloads")
+os.makedirs(download_dir, exist_ok=True)
+file_path = os.path.join(download_dir, "passwd.7z")
+
+# 设置 Chrome 浏览器请求头
+headers = {
+    "User-Agent": (
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+        "AppleWebKit/537.36 (KHTML, like Gecko) "
+        "Chrome/120.0.0.0 Safari/537.36"
+    )
+}
+
+# 构建请求对象
+req = urllib.request.Request(url, headers=headers)
 
 # 下载文件
-urllib.request.urlretrieve(url, file_name)
-print(f"{file_name} 下载完成！") 
+print(f"正在下载文件到: {file_path}")
+with urllib.request.urlopen(req) as response, open(file_path, 'wb') as out_file:
+    out_file.write(response.read())
+
+print("下载完成！")
+
 ```
